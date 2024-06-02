@@ -1,0 +1,49 @@
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border-color: orange;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.caption {
+    color: red;
+    border: 1px solid red;
+    margin-bottom: 15px;
+}
+
+table {
+    margin: 0 auto;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+table td, th {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+  }
+
+  section {
+    padding-left: 50px;
+  }

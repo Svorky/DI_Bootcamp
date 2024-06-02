@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --btn-back-color: dodgerblue;
+    --btn-text-color: white;
+}
+
+body {
+    background-color: rgba(236, 226, 226, 0.137);
+    font-family: "cera-round-pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 10%;
+}
+
+.btn-signin {
+    display: inline-block;
+    background-color: var(--btn-back-color);
+    color: var(--btn-text-color);
+    padding: 5px;
+    border-width: 0px;
+    border-radius: 2px;
+}
+
+main {
+    height: 100vh;
+}
+
+section {
+    height: 50%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.welcome {
+    background-image: url(https://images.pexels.com/photos/734973/pexels-photo-734973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover; 
+    color: white;
+    flex-direction: column;
+}
+
+.welcome-text {
+    font-size: 32px;
+    text-shadow: 1px 0px black;
+    width: 600px;
+    text-align: center;
+}
+
+.btn-signup{
+    background-color: var(--btn-back-color);
+    color: var(--btn-text-color);
+    padding: 5px 15px;
+    border-width: 0px;
+    border-radius: 2px;
+    height: 2rem;
+}
+
+.email {
+    width: 300px;
+    padding: 5px;
+    border-width: 0;
+    border-radius: 2px;
+    height: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.card i {
+    font-size: 2rem;
+    color: #74C0FC;
+}
+
+.card p {
+    opacity: 0.7;
+}
