@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --left: 10px;
+}
+
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    /* height: 100%; */
+    height: 100vh;
+    background: url('thor.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 48px;
+    position: relative;
+    font-weight: bold;
+}
+
+.left {
+    position: absolute;
+    rotate: 90deg;
+    left: var(--left)
+}
+
+.right {
+    position: relative;
+    rotate: 90deg;
+    left: calc(var(--left) + 15px);
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links a {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90%;
+    padding-left: 50px;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+.text {
+    font-size: 1.2rem;
+    width: 500px;
+}
