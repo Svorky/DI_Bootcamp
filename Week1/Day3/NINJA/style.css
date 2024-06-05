@@ -1,0 +1,64 @@
+*{
+    --size: 50px;
+}
+
+.first {
+    display: grid;
+    grid-template-columns: repeat(16, var(--size));
+    grid-template-rows: repeat(16, var(--size));
+    gap: 1px;
+    margin-bottom: 50px;
+}
+
+.first .box:nth-child(3n-2) {
+    background-color: orange;
+}
+
+.first .box:nth-child(3n-1) {
+    background-color: rgb(236, 199, 130);
+}
+
+.first .box:nth-child(3n) {
+    background-color: brown;
+}
+
+.second {
+    display: grid;
+    grid-template-columns: repeat(16, var(--size));
+    grid-template-rows: repeat(16, var(--size));
+    gap: 1px;
+    margin-bottom: 50px;
+}
+
+.second .box:nth-child(4n-3) {
+    background-color: lightgray;
+}
+
+.second .box:nth-child(4n-2) {
+    background-color: darkgray;
+}
+
+.second .box:nth-child(4n-1) {
+    background-color: grey;
+}
+
+.second .box:nth-child(4n) {
+    background-color: black;
+}
+
+.third {
+    display: grid;
+    grid-template-columns: repeat(16, var(--size));
+    grid-template-rows: repeat(16, var(--size));
+    gap: 1px;
+    margin-bottom: 50px;
+}
+
+.third .box:nth-child(7n+1) {
+    background-color: red;
+}
+
+.third .box:nth-child(7n+2) {
+    background-color: orange;
+}
+
