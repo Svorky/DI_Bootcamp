@@ -62,3 +62,36 @@
     background-color: orange;
 }
 
+.container div:nth-child(32n + 2),
+.container div:nth-child(32n + 4),
+.container div:nth-child(32n + 6),
+.container div:nth-child(32n + 8),
+.container div:nth-child(32n + 10),
+.container div:nth-child(32n + 12),
+.container div:nth-child(32n + 14),
+.container div:nth-child(32n + 16) {
+    background: #D83E3B80;
+}
+
+/* Apply background color to every second div in even rows, starting from the first div */
+.container div:nth-child(32n + 17),
+.container div:nth-child(32n + 19),
+.container div:nth-child(32n + 21),
+.container div:nth-child(32n + 23),
+.container div:nth-child(32n + 25),
+.container div:nth-child(32n + 27),
+.container div:nth-child(32n + 29),
+.container div:nth-child(32n + 31) {
+    background: #D83E3B80;
+}
+
+.container div:nth-child(32n + 18),
+.container div:nth-child(32n + 20),
+.container div:nth-child(32n + 22),
+.container div:nth-child(32n + 24),
+.container div:nth-child(32n + 26),
+.container div:nth-child(32n + 28),
+.container div:nth-child(32n + 30),
+.container div:nth-child(32n + 32) {
+    background: #D83E3B;
+}
