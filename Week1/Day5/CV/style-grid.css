@@ -75,18 +75,17 @@ body {
     max-width: 120rem;
     margin: auto;
 
-    .cover {
-        display: flex;
+    .cover-section {
+        flex-direction: row;
         gap: 40px;
         align-items: center;
         justify-content: center;
         min-height: 50vh;
         max-width: 50rem;
-        margin: auto;
         padding-top: 2rem;
 
-        > .about {
-            > h5 {
+        >.about {
+            >h5 {
                 margin: 0;
                 color: #868080;
             }
@@ -108,7 +107,7 @@ body {
                 border-style: solid;
                 font-size: 16px;
             }
-            
+
             .border-blue {
                 border-color: blue;
             }
@@ -123,11 +122,8 @@ body {
     }
 
     .activity-section {
-        display: flex;
         flex-direction: column;
-        margin: auto;
-        max-width: 80rem;
-        
+
         .activity {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -141,8 +137,66 @@ body {
     padding: 15px 5px 10px 5px;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 80rem;
+}
+
 .section-title {
     font-size: 2.2rem;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #ddd5d5;
+    color: #3e3d3d;
+    padding: 5px 10px;
+    width: fit-content;
+    text-wrap: nowrap;
+    border-radius: 5px;
+}
+
+.projects-section {
+    .projects-container {
+        .card-project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10%;
+            margin-bottom: 20px;
+
+            img {
+                display: inline-block;
+                /* height: 10%; */
+                width: 15%;
+                border-radius: 25px;
+            }
+        }
+
+        .card-project:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
 }
