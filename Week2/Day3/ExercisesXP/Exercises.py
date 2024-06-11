@@ -117,6 +117,6 @@ print(disney_users_I)
 
 disney_users_MP = {}
 for (index_count, name) in enumerate(users):
-    if name[0] == "M" or name[0] == "P":
+    if name[0] == "M" or name.startswith("P"):
         disney_users_MP[name] = index_count
 print(disney_users_MP)
