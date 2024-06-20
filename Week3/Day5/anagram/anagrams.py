@@ -1,6 +1,4 @@
 import anagram_checker
-import string
-
 
 def main():
     while True:
