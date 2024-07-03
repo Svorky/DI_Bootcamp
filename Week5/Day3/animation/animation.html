@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="animation.js" defer></script>
+    <style>
+        #first p {
+            background: yellow;
+            color: red;
+        }
+
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="first">
+        <div id="container1"></div>
+        <button id="clear" onclick="myStopFunction()">Clear Interval</button>
+    </section>
+    <section id="second">
+        <p><button onclick="myMove()">Click Me</button></p>
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+    </section>
+</body>
+
+</html>
