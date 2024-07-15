@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily</title>
+    <script src="daily.js" defer></script>
+    <style>
+        body {
+            font-size: 1.2rem;
+        }
+        #gifs {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img {
+            display: block;
+            margin: 10px;
+        }
+        .form {
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+    <form>
+        <input type="text" name="tag" id="category" placeholder="Category">
+        <button type="submit" id="submit">Search</button>
+    </form>
+    <button type="button" id="deleteall">Delete All</button>
+
+    </div>
+    <br>
+    <div id="gifs"></div>
+</body>
+</html>
