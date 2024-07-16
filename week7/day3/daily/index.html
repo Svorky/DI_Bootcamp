@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daily Challenge: Currency Converter</title>
+        <script src="script.js" defer></script>
+        <style>
+            body,
+            input,
+            select,
+            button,
+            label {
+                font-size: 1.5rem;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Currency converter</h1>
+        <form>
+            <p><label for="from">From</label></p>
+            <input type="text" placeholder="amount" name="amount" />
+            <br />
+            <br />
+            <select name="from" id="from"></select>
+            <br />
+            <p>
+                <label for="to">To</label>
+                <button type="button" id="switch">Switch</button>
+            </p>
+            <select name="to" id="to"></select>
+            <br />
+            <br>
+            <button type="submit">Convert</button>
+        </form>
+        <br />
+        <div id="result"></div>
+    </body>
+</html>
