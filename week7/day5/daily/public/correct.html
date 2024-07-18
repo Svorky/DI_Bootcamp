@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correct</title>
+    <style>
+        p{
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        #mark{
+            font-size: 10rem;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:visited {
+            color: black;
+        }
+        button {
+            padding: 5px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <p id="mark">✅</p>
+    <p>Correct! Good job!</p>
+    <p>Your score: <span id="score"></span></p>
+    <button><a href="/">Continue?</a></button>
+    <script>
+        let search = new URLSearchParams(window.location.search)
+        let score = search.get('score')
+        document.querySelector('#score').innerText = score
+    </script>
+</body>
+</html>
