@@ -42,7 +42,7 @@ const getAllUsers = (req, res) => {
 };
 
 const getOneUser = (req, res) => {
-    _getOneUser(req.params.id)
+    _getOneUser(Number(req.params.id))
         .then((result) => res.json(result))
         .catch((error) => {
             res.status(404).json({ message: error });
