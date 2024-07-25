@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+    <h1>Welcome</h1>
+    <h2>Hi, <%= locals.user.firstname %>
+    </h2>
+    <% if(locals?.login) { %>
+        <h2>You are logged in</h2>
+    <% } else {%>
+        <h2>Please log in</h2>
+    <% } %>
+
+    <% for(const key in students) { %>
+        <p><%= key %> <%= students[key] %></p>
+    <% } %>
+
+        <% 
+            let html = Object.entries(students).map([key,value]=>{
+                return `<div>${value}</div>`
+            })
+        %>
+        <%- html.join('') %>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>
