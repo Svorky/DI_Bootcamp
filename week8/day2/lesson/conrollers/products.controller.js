@@ -25,7 +25,7 @@ const getOneProduct = (req, res) => {
 const insertProduct = (req, res) => {
     const { name, price } = req.body
     _insertProduct(name,price)
-    .then( result => res.status(201).json(result))
+    .then( result => getAllProducts(req,res))
     .catch(error => res.json(error))
 }
 module.exports = {
