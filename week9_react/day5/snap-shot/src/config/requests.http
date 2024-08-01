@@ -1,0 +1,5 @@
+GET https://api.pexels.com/v1/search?query=mountain&per_page=16
+Authorization: f5xleS0WRPgrJjNtuvIF9N5SVNVwARcT883eVGmvbIrGwzvfdxe8wKrq
+
+GET https://api.pexels.com/v1/search/?page=2&per_page=16&query=mountain
+Authorization: f5xleS0WRPgrJjNtuvIF9N5SVNVwARcT883eVGmvbIrGwzvfdxe8wKrq
