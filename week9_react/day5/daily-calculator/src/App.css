@@ -1,0 +1,41 @@
+* {
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: #3B1469;
+}
+
+.App {
+  text-align: center;
+  color: #F0D6FF;
+}
+
+.inputs {
+  background-color: #D4B0FA;
+  border-radius: 5px;
+  font-size: 2rem;
+  width: 5ch;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.btn {
+  background-color: #671EE6;
+  border-radius: 10px 25px;
+  color: #F0D6FF;
+  border-width: 0px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.operator {
+  background-color: #671EE6;
+  color: #F0D6FF;
+  border-radius: 10px 25px;
+  border-width: 0px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
