@@ -1,0 +1,28 @@
+* {
+  font-size: 1.5rem;
+}
+
+.app {
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+}
+
+input[type='checkbox'] {
+  width: 1.5rem;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+li button {
+  margin: 5px;
+}
+
+li span {
+  padding: 10px;
+}
