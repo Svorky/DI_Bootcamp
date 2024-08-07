@@ -1,6 +1,12 @@
 import React from 'react';
 import {useSelector, useDispatch} from 'react-redux'
-import { increment, decrement, reset, incrementByNum } from './counterSlice.js';
+import {
+    increment,
+    decrement,
+    reset,
+    incrementByNum,
+    delayIncrementThunk,
+} from "./counterSlice.js";
 import { useRef } from 'react';
 
 const Counter = (props) => {
@@ -23,6 +29,9 @@ const Counter = (props) => {
             <h2>by num</h2>
             <input ref={numRef} type="text" />
             <button onClick={addNum}>Add</button>
+        </div>
+        <div>
+            <button onClick={()=> dispatch(delayIncrementThunk())}>Delay</button>
         </div>
     </>
     );
