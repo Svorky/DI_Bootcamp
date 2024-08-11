@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  border-width: 2px;
+  border-color: aliceblue;
+  border-radius: 5px;
+  border-style: solid;
+  margin: 5px;
+  padding: 0 10px;
+}
+
+select {
+  font-size: 22px;
+  padding: 5px;
+  margin-bottom: 1em;
+}
