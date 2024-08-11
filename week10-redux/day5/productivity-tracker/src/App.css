@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+input, select {
+  font-size: 1.2rem;
+}
+
+button {
+  margin: 5px;
+}
+
+.disabled {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: 0;
+  cursor: text;
+}
+
+.enabled {
+  /* border: none; */
+  outline: 0;
+  cursor: text;
+}
+
+.checkbox {
+  height: 2ch;
+  width: 2ch;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.tasklist {
+  padding: 30px;
+}
